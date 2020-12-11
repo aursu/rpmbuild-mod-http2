@@ -1,0 +1,9 @@
+version: "3.5"
+services:
+  centos7modhttp2base:
+    build:
+      context: .
+      dockerfile: Dockerfile.base
+      args:
+        centos: $OS7
+    image: aursu/modhttp2build:${OS7}-base
