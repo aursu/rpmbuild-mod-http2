@@ -16,7 +16,7 @@ jobs:
       - run:
           name: Pull images for RPM build docker services
           command: |
-            docker-compose -f rpmbuild/docker-compose.base.yml pull
+            docker-compose -f rpmbuild/docker-compose.yml pull
             docker-compose -f rpmbuild/docker-compose.bintray.yml pull
       - run:
           name: Build PHP Docker images
